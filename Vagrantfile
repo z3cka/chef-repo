@@ -109,3 +109,7 @@ Vagrant.configure("2") do |config|
   #
   #   chef.validation_client_name = "ORGNAME-validator"
 end
+Vagrant::Config.run do |config|
+  # unique hostname for this node
+  config.vm.host_name = "970a-g46.vagrant.vm"
+end
